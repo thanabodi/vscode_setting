@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "msvc build",
+            "type": "shell",
+            "command": "CL.exe",
+            "args": [
+                "/EHsc",
+                "/Zi",
+                "/I\"D:\\TOOL\\vcpkg\\installed\\x86-windows\\include\"",
+                "/Fo.\\build\\",
+                "/Fd.\\build\\",
+                "/Fe.\\build\\main.exe",
+                "main.cpp",
+            ],
+            "group":  {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal":"always"
+            },
+            "problemMatcher": "$msCompile",
+        }
+    ]
+}
