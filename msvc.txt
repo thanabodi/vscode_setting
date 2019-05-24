@@ -1,0 +1,6 @@
+set LIB_VCPKG=D:\vcpkg\installed\x86-windows\lib
+set INC_VCPKG=D:\vcpkg\installed\x86-windows\include
+
+cl /EHsc /I %INC_VCPKG% kryptos.cpp lib/URL_extract.cpp libcurl.lib libcurl.lib /link /LIBPATH:%LIB_VCPKG%
+
+
